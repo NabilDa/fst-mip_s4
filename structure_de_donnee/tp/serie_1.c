@@ -106,8 +106,7 @@ void stockerTPFichier(TestsVille *T, int taille, char *nomfichier)
 
 	for (i = 0; i < taille; i++)
 	{
-		fprintf(f, "%12s\t", T[i].ville);
-		fprintf(f, "%.2f\n", tauxPositivite(T[i]));
+		fprintf(f, "%20s\t%.2f\n", T[i].ville, tauxPositivite(T[i]));
 	}
 }
 
